@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td ,select,input,option,textarea{ margin: 0; padding: 0; border: 0;    outline: 0; font-size: 100%; box-sizing:border-box;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{ display:block; }
+audio,canvas,video { display:inline-block; }
+audio:not([controls]) { display:none; height:0; }
+pre{ white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
+q { quotes:none; }
+q:before,q:after{content:''; content:none}
+small{font-size:80%}
+sub,sup{font-size:75%; line-height:0; position:relative; vertical-align:baseline}
+sup{top: -4px;}
+sub{bottom:-0.25em}
+nav ul,nav ol{list-style:none; list-style-image:none;}
+button{cursor: pointer;}
+button:hover { box-shadow: 0px 3px 8px 2px rgba(42, 44, 117, 0.3); }
+button,input,select,textarea{font-size:100%; margin:0; vertical-align:baseline; border: 0; }
+textarea { overflow:auto; vertical-align:top; resize: none; background: #F4F3F0; border: none; width: 100%; height: 80px; padding: 15px; font-family: 'Philosopher', sans-serif; font-weight: 400; color: #0C2D3F; font-size: 14px; }
+table{border-collapse:collapse;border-spacing:0}
+button,html input[type="button"],input[type="reset"],input[type="submit"],textarea{-webkit-appearance:none; border-radius:0}
+input[type="submit"], button { cursor: pointer; font-family: 'Philosopher', sans-serif; font-style: normal; }
+/* remember to define focus styles! */
+:focus {outline: 0;}
+ol li { list-style-position: inside; }
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: 400; }
+a { text-decoration:none; }
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+table { border:0 none; border-collapse:collapse; border-spacing:0; width: 100%; }
+td { vertical-align:top; }
+img { border:0 none; max-width:100%; }
+td,th { padding: 10px; }
+th { background-color: #ffffff; }
+thead tr th { font-size: 14px; line-height: 19px; color: #464646; font-family: 'Philosopher', sans-serif; font-weight: 700;  vertical-align: middle; background: #ffffff;  }
+tr td { font-size: 14px; line-height: 19px; color: #464646; font-family: 'Philosopher', sans-serif; font-weight: 400;  vertical-align: middle; background: #ffffff; }
+tr td strong { font-family: 'Philosopher', sans-serif; font-weight: 700; }
+.white-color,.white-color * { color: #ffffff; }
+/* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display:block}
+/* For IE browsers */ 
+select::-ms-expand { display: none; }
+select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; border-radius: 0; color: #000; }
+/* For modern browsers */ 
+body { font-family: 'Philosopher', sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #000000; }
+li { font-family: 'Philosopher', sans-serif; font-weight: 400; color: #000000; font-size: 14px; line-height: 1.33; padding-bottom: 7px;  }
+p { font-family: 'Philosopher', sans-serif; font-style:normal; font-weight: 400; color: #000000; font-size: 14px; line-height: 1.4; padding-bottom: 21px; }
+p strong { font-family: 'Philosopher', sans-serif; font-style:normal; font-weight: 700; }
+b,strong { font-family: 'Philosopher', sans-serif; font-weight: 700; }
+a { outline:none; text-decoration: underline; cursor:pointer; color: #01354B; -webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out; }
+a:hover { color: #464646; }
+.z-index1 { z-index: 10; position: relative; }
+.z-index2 { z-index: 20; position: relative; }
+.z-index3 { z-index: 30; position: relative; }
+.z-index4 { z-index: 40; position: relative; }
+.z-index5 { z-index: 50; position: relative; }
+.mar-15 { margin: 0 -15px; }
+.bluebg { background-color: #00728b; }
+/* ~~~~~~~~~~ Flex ~~~~~~~~~~ */
+.flex-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+.flex-end { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end }
+.flex-start { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.flex-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.nowrap { flex-wrap: nowrap; }
+.ml-auto { margin-left: auto; }
+.text-center { text-align: center; }
+section,header,footer { width: 100%; position: relative; z-index: 5; }
+.wpcf7-form.submitting .submitbtn input { pointer-events: none; }
+form.wpcf7-form.sent .wpcf7-response-output { background-color: #46b450; border: none; text-align: center; font-family: 'Philosopher', sans-serif; font-style:normal; font-weight: 600; color: #ffffff; display: block; margin-top: 20px; padding:10px; }
+span.wpcf7-not-valid-tip { font-size: 16px; margin-top: 5px; }
+form.wpcf7-form.invalid .wpcf7-response-output { display:none; }
+/* ~~~~~ Box Sizing ~~~~~ */
+
+#root,
+.page-wrapper { position:relative; overflow:hidden; max-width:100%; height:100%; min-height: 100vh; }
+.container { position: relative; max-width: 1170px; margin: 0 auto; padding-left: 20px; padding-right: 20px; z-index: 10; }
+.cf:before,.cf:after{content:"\0020";display:block;height:0;overflow:hidden;}.cf:after{clear:both;}.cf{zoom:1;}
+input, textarea, button, select, a { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+/* ----- Auto focus fill Remove css ----- */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
+input[type="time"]::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Philosopher', sans-serif; font-weight: 700; color: #ffffff; line-height: 1.3; padding-bottom: 20px; }
+h1 { font-size: 32px; }
+h2 { font-size: 26px; }
+h3 { font-size: 28px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+@media(max-width: 1200px) {
+	h1 { font-size: 28px; }
+	h2 { font-size: 24px; }
+	h3 { font-size: 22px; }
+}
+@media(max-width: 991px) {
+	h1 { font-size: 26px; }
+	h2 { font-size: 22px; }
+	h3 { font-size: 20px; }
+}
+@media(max-width: 767px) {
+	h1 { font-size: 20px; }
+	h2 { font-size: 20px; }
+	h3 { font-size: 20px; }
+}
+ul li { list-style: disc;  list-style-position: inside; }
+form { border: none !important; text-align: left; }
+input[type="number"] { border: 1px solid #464646; border-radius: 0; font-size: 14px; padding: 24px 33px; background-color: transparent; font-family: 'Philosopher', sans-serif; font-style:normal;
+	font-weight: 500; color: #464646; width: 100%; background-color: transparent; }
+select { background-image: url(../images/select-arrow.svg); background-position: right center; background-repeat: no-repeat; background-size: 40px; }
+select,
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="date"], input[type="time"], input[type="url"], input[type="password"], input[type="search"],textarea { border-radius: 0; -moz-appearance: none; -webkit-appearance: none; font-size: 12px; padding: 13px 15px; background-color: transparent; font-family: 'Philosopher', sans-serif; font-style:normal;
+	font-weight: 500; color: #ffffff; width: 100%; }
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="search"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { border-color: #57c6d3; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {-webkit-appearance:none; }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { margin: 0; }
+input[type="number"] { -moz-appearance: textfield; } 
+textarea { overflow: hidden; resize:none }
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+::-moz-selection { background: #000000; color: #ffffff; }
+::selection { background: #000000; color: #ffffff; }
+::-moz-focus-inner { border: 0; padding: 0; }
+q,blockquote { display: block; width: 100%; padding: 10px 0 10px 15px; margin-top: 15px; margin-bottom: 15px; margin-left: 2%; border-left: 5px solid #d8dce5; font-weight: 400; font-style: italic; color: #595a5a; font-family: 'Philosopher', sans-serif; font-weight: 400; font-style: normal; color: #66717e; }
+*[dir="rtl"] { text-align:right !important; width: 100%; display: block; }
+*[dir="ltr"] { text-align:left !important; width: 100%; display: block; }
+.marker { background-color: yellow; }
+.hidescroll { overflow: hidden; }
+.mar-minus { margin-left: -15px; margin-right: -15px; }
+/* ~~~~~~~~ Placeholder CSS ~~~~~~~~~~ */
+input::-webkit-input-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+input::-moz-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+input:-ms-input-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+input:-moz-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+textarea::-webkit-input-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+textarea::-moz-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+textarea:-ms-input-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+textarea:-moz-placeholder {  font-family: 'Philosopher', sans-serif; font-weight: 500; font-style: normal; color: #ffffff; opacity: 1;  }
+/* ~~~~~~~~ Placeholder CSS ~~~~~~~~~~ */
+/* ----- Defaukt CSS ----- */
+/* Change the white to any color */
+.ctmbtn a {display: inline-block; background-color: #01354B; color: #ffffff; font-family: 'Philosopher', sans-serif; font-weight: 400; font-size: 14px; line-height: 1; padding: 10px 20px; border-radius: 0; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; position: relative; z-index: 100; overflow: hidden; text-transform: uppercase; text-align: center; text-decoration: none; position: relative; z-index:2; border-radius: 0; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.ctmbtn a:hover { background-color: #00b6d1; color: #ffffff; }
+.ctmbtn a:hover path { fill: #01354B; }
+.ctmbtn a span { display: -webkit-box; display: -ms-flexbox; display: flex; align-items: center; justify-content: center; }	
+.ctmbtn a span svg { min-width: 16px; max-width: 16px; margin-left: 10px; position: relative; left: 0; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.ctmbtn a:hover span svg { left: 4px; }
+.transparent-btn a { background-color: transparent; border: 1px solid #ffffff; }
+.ctmbtn.transparent-btn a:hover { background-color: #ffffff; color: #01354B; } 
+.ctmbtn.transparent-btn a:hover path { fill: #01354B; }
+input[type="submit"] { color: #ffffff; border-radius: 0; -webkit-transition: all 0s ease-in-out; transition: all 0s ease-in-out; display: block; padding: 14px 25px; line-height: 0.8; width: auto; font-family: 'Philosopher', sans-serif; font-weight: normal; font-size: 16px; background: rgb(80,131,170); background: linear-gradient(180deg, #00abc4 0%, #00768f 100%); -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+input[type="submit"]:hover { color: #ffffff; background: #65c3dd; }
+section { position: relative; z-index: 10; }
+.no-wrap { flex-wrap: nowrap; }
+.text-right { text-align: right; }
+.bgimage { background-size: cover; background-position: center; background-repeat:no-repeat; }
+.admin-bar .HeaderWrap { top: 32px; }
+.slick-next.slick-disabled { cursor: no-drop; background: none; }
+.col-1  { width:8.33333333%  }
+.col-2  { width:16.66666667% }
+.col-3  { width:25% }
+.col-4  { width:33.33333333% }
+.col-5  { width:41.66666667% }
+.col-6  { width:50% }
+.col-7  { width:58.33333333% }
+.col-8  { width:66.66666667% }
+.col-9  { width:75% }
+.col-10 { width:83.33333333% }
+.col-11 { width:91.66666667% }
+.col-12 { width:100% }
+.graybg { background-color: #FBF8F3; }
+.whitebg { background-color: #ffffff; }
+.flex-center {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.align-center { align-items: center; }
+.flex-end { justify-content: flex-end; }
+
+
+/*Custom Cursor*/
+
+.cursor { position: fixed; width: 20px; height: 20px; pointer-events: none; mix-blend-mode: difference; z-index: 99999; transition: transform 0.2s; }
+.cursor:after {content: ''; position: absolute; top: 0; left: 0; height: 60px; width: 60px; background-image: url(../images/cigarette-cursor.png); background-position: top left; background-repeat: no-repeat; background-size: contain; }
+html, * {cursor: none; }
+.h {text-align: center; position: absolute; left: 0; right: 0; margin: auto; }
+.h .c {border: 2px solid rgba(255, 255, 255, 0.1); border-radius: 400px; position: absolute; margin: auto; }
+.h .c:nth-of-type(1) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 6px; height: 1px; right: 0px; bottom: 10px; -webkit-filter: blur(8.3333333333px); -moz-filter: blur(8.3333333333px); -o-filter: blur(8.3333333333px); -ms-filter: blur(8.3333333333px); transform-origin: 2px 2px; -webkit-animation: spin 8s 0.1s linear infinite; animation: spin 8s 0.1s linear infinite; background: rgba(255, 255, 255, 0.8); }
+.h .c:nth-of-type(2) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 12px; height: 2px; right: 0px; bottom: 20px; -webkit-filter: blur(8.6666666667px); -moz-filter: blur(8.6666666667px); -o-filter: blur(8.6666666667px); -ms-filter: blur(8.6666666667px); transform-origin: 4px 4px; -webkit-animation: spin 8s 0.2s linear infinite; animation: spin 8s 0.2s linear infinite; background: rgba(255, 255, 255, 0.8); }
+.h .c:nth-of-type(3) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 18px; height: 3px; right: 0px; bottom: 30px; -webkit-filter: blur(9px); -moz-filter: blur(9px); -o-filter: blur(9px); -ms-filter: blur(9px); transform-origin: 6px 6px; -webkit-animation: spin 8s 0.3s linear infinite; animation: spin 8s 0.3s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(4) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 24px; height: 4px; right: 0px; bottom: 40px; -webkit-filter: blur(9.3333333333px); -moz-filter: blur(9.3333333333px); -o-filter: blur(9.3333333333px); -ms-filter: blur(9.3333333333px); transform-origin: 8px 8px; -webkit-animation: spin 8s 0.4s linear infinite; animation: spin 8s 0.4s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(5) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 30px; height: 5px; right: 0px; bottom: 50px; -webkit-filter: blur(9.6666666667px); -moz-filter: blur(9.6666666667px); -o-filter: blur(9.6666666667px); -ms-filter: blur(9.6666666667px); transform-origin: 10px 10px; -webkit-animation: spin 8s 0.5s linear infinite; animation: spin 8s 0.5s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(6) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 36px; height: 6px; right: 0px; bottom: 60px; -webkit-filter: blur(10px); -moz-filter: blur(10px); -o-filter: blur(10px); -ms-filter: blur(10px); transform-origin: 12px 12px; -webkit-animation: spin 8s 0.6s linear infinite; animation: spin 8s 0.6s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(7) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 42px; height: 7px; right: 0px; bottom: 70px; -webkit-filter: blur(10.3333333333px); -moz-filter: blur(10.3333333333px); -o-filter: blur(10.3333333333px); -ms-filter: blur(10.3333333333px); transform-origin: 14px 14px; -webkit-animation: spin 8s 0.7s linear infinite; animation: spin 8s 0.7s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(8) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 48px; height: 8px; right: 0px; bottom: 80px; -webkit-filter: blur(10.6666666667px); -moz-filter: blur(10.6666666667px); -o-filter: blur(10.6666666667px); -ms-filter: blur(10.6666666667px); transform-origin: 16px 16px; -webkit-animation: spin 8s 0.8s linear infinite; animation: spin 8s 0.8s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(9) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 54px; height: 9px; right: 0px; bottom: 90px; -webkit-filter: blur(11px); -moz-filter: blur(11px); -o-filter: blur(11px); -ms-filter: blur(11px); transform-origin: 18px 18px; -webkit-animation: spin 8s 0.9s linear infinite; animation: spin 8s 0.9s linear infinite; background: rgba(255, 255, 255, 0.8); } .h .c:nth-of-type(10) {box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0); width: 60px; height: 10px; right: 0px; bottom: 100px; -webkit-filter: blur(11.3333333333px); -moz-filter: blur(11.3333333333px); -o-filter: blur(11.3333333333px); -ms-filter: blur(11.3333333333px); transform-origin: 20px 20px; -webkit-animation: spin 8s 1s linear infinite; animation: spin 8s 1s linear infinite; background: rgba(255, 255, 255, 0.8); }
+@-webkit-keyframes spin {
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg); }
+}
+/*Custom Cursor*/
+ 
+video { width: 100%; display: block; }
+
+body { background: #000000; color: #ffffff; }
+/*Hero Banner*/
+
+
+#banner-animation-icon1 { position: absolute; right: 0; top: 50vh; z-index: 100; max-width: 200px; opacity: 0.8 }
+
+.video-wrapper { width: 50%; position: fixed; top: 0; left: 0; bottom: 0; margin: auto; height: 100%; -webkit-transform: scaleX(-1); transform: scaleX(-1); z-index: 1; display: flex; align-items: center; }
+.dvl-video-wrapper {  width: 100%; box-shadow: 0px 0px 20px 20px #050408; }
+.dvl-video-wrapper video { height: 100vh; }
+
+.hero-banner .container { max-width: 800px; }
+.hero-banner { position: relative; min-height: 100vh; }
+.hero-bg { position: absolute;  top: 0; left: 0; width: 100%; height: 100%; z-index: 3; opacity: 0.8; background-size: contain; background-position: bottom right; }
+.hero-banner h1{
+	font-size: 60px;
+	text-align: center;
+	display: inline-block;
+}
+.hero-banner h1 strong { display: block; border-top: 2px solid green; border-bottom: 2px solid green; font-size: 70px; }
+
+.hero-banner .container { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; min-height: 100vh; }
+.title-wrap { border: 5px solid rgba(255,255,255,0.1); width: 100%; padding: 50px; text-align: center; background: rgb(34 15 25 / 30%); }
+/*Hero Banner*/
+
+
+/* -- Content Area -- */
+
+/* -- Content Area -- */
+
+
+
+
+
+
+
+
+
+.fade-up { opacity: 0; }
+.come-in.fade-up {position: relative; -webkit-animation: fade-up 0.6s ease forwards; animation: fade-up 0.6s ease forwards; }
+@keyframes fade-up {
+	0%   { opacity:0; -webkit-transform:translateY(50%); transform:translateY(50%); }
+	100% { opacity:1; -webkit-transform:translateY(0);     transform:translateY(0);     }
+}
+@-webkit-keyframes fade-up {
+	0%   { opacity:0; -webkit-transform:translateY(50%); transform:translateY(50%); }
+	100% { opacity:1; -webkit-transform:translateY(0);     transform:translateY(0);     }
+}
+
+/* Footer Form Animation */
+.fade-in { opacity: 0; }
+.come-in.fade-in {position: relative; -webkit-animation: fade-in 0.6s ease forwards; animation: fade-in 0.6s ease forwards; }
+@keyframes fade-in {
+	0%   { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes fade-in {
+	0%   { opacity:0; }
+	100% { opacity:1; }
+}
+
+.come-in.fade-none {-webkit-animation: fade-none 1s ease forwards; animation: fade-none 1s ease forwards;
+	animation-delay: 6s;
+}
+@keyframes fade-none {
+	0%   { opacity: 1; }
+	100% { opacity: 0; visibility: hidden; display: none; z-index: -1000; }
+}
+@-webkit-keyframes fade-none {
+	0%   { opacity: 1; }
+	100% { opacity: 0; visibility: hidden; display: none; z-index: -1000; }
+}
+
+
+.fade-in-form  { opacity: 0; }
+.form-row.animation-effect.come-in.fade-in-form { -webkit-animation: fade-in-form 1s ease forwards; animation: fade-in-form 1s ease forwards; animation-delay: 6s; }
+@keyframes fade-in-form {
+	0%   { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes fade-in-form {
+	0%   { opacity:0; }
+	100% { opacity:1; }
+}
+/* Footer Form Animation */
+
+ 
+
+.form-wrapper { background: #000; position: relative; z-index: 1000; }
+.video-wrap { position: absolute;top: 0; left: 0; width: 100%; left: 0; z-index: 2 }
+.form-bg { position: absolute;  top: 0; left: 0; width: 100%; height: 100%; z-index: 3; opacity: 0.1; filter: blur(8px);
+  -webkit-filter: blur(8px); }
+.form-dvl { position: relative; z-index:  10; display: flex; align-items: center; justify-content: center; min-height: 100vh; width: 100%; }
+.form-dvl-box { max-width: 600px; width: 100%; margin: 0 auto; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.25); }
+.blankdiv { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
